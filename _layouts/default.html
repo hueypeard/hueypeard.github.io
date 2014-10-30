@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--[if IE]>
+            <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
+        <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="/css/font-awesome.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+        <title>{{ site.name }}</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <ul>
+                    <a href="#" alt="Home">
+                        <li class="brand">
+                            <span>Huey Peard</span>
+                        </li>
+                    </a>
+                    <a href="#" alt="Blog">
+                        <li class="active">
+                            <i class="fa fa-comment"></i>
+                            <span>Blog</span>
+                        </li>
+
+                    </a>
+                    <a href="#" alt="Projects">
+                        <li class="">
+                            <i class="fa fa-wrench"></i>
+                            <span>Projects</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="" alt="Contact Me">
+                            <i class="fa fa-phone"></i>
+                            <span>Contact Me</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            {{ content }}
+        </div>
+        <div class="footer">
+            <span class="theme-text">Theme designed by <a href="#">Huey Peard</a>.</span>
+            <span class="copyright-text">&copy; Huey Peard 2014</span>
+        </div>
+    </body>
+</html>
