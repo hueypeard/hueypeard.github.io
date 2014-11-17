@@ -74,8 +74,10 @@ strong {
     padding: 30px;
 
     .theme-text {
+        display: block;
+        text-align: center;
+
         color: #3A3A3A;
-        float: left;
 
         a {
             @include link-colors(#5A5A5A, true, true, true);
@@ -84,11 +86,34 @@ strong {
     }
 
     .copyright-text {
+        display: block;
+        text-align: center;
+
         color: #FFFFFF;
-        float: right;
+
+        margin-top: 15px;
     }
 
-    height: 75px;
+
+    @include breakpoint(600px) {
+        height: 75px;
+
+        .theme-text {
+            float: left;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .copyright-text {
+            margin-top: 0;
+            float: right;
+            display: inline-block;
+            text-align: left;
+        }
+
+    }
+
+    height: 110px;
 }
 
 i {
